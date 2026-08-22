@@ -17,7 +17,7 @@ if not KEY:
 
 SERIES = ["UNRATE", "T10Y2Y", "VIXCLS", "IC4WSA", "PAYEMS", "SP500", "NASDAQCOM", "GDP"]
 API = ("https://api.stlouisfed.org/fred/series/observations"
-       "?series_id={sid}&api_key={key}&file_type=json&sort_order=asc&limit=4000")
+       "?series_id={sid}&api_key={key}&file_type=json&sort_order=asc&limit=100000")
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
 os.makedirs(OUT, exist_ok=True)
 
